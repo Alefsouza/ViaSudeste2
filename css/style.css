@@ -1,0 +1,2322 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #f4f4f4;
+}
+
+hr {
+    border: none;
+    background-color: green;
+    height: 2px;
+    width: 140px;
+    margin: 20px auto;
+}
+
+#hrnot{
+    border: none;
+    background-color: #adffac;
+    height: 2px;
+    width: 633px;
+    
+}
+
+#hrrod{
+    border: none;
+    background-image: linear-gradient(to right top, #adffac, #94eb96, #7bd880, #62c56b, #46b256, #37a54a, #26993e, #0e8c32, #0a822d, #067827, #036f22, #00651d);
+    height: 15px;
+    width: 100%;
+    margin: auto;
+}
+
+#testelinha{
+    font-size: 0.5px;
+    color: green;
+    background-color: green;
+    
+}
+
+.break2 {
+    flex-basis: 100%;
+    height: 200px;
+    margin-top: 20px;
+  }
+
+  .break {
+    flex-basis: 100%;
+    height: 200px;
+  }
+
+  .breakimg {
+    flex-basis: 100%;
+    height: 200px;
+    flex-grow: 1;
+  }
+
+
+/*Logo e Redes Social*/
+
+#header-confidencial{
+    display: flex;
+    flex-direction: row;
+    flex-wrap:nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: green;
+}
+
+#header1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: green;
+    background-color: green;
+    z-index: 9;
+}
+
+#logo {
+    margin-left: 10%;
+    padding: 10px;
+    flex-direction: column;
+    margin-right: auto;
+    z-index: 1;
+}
+
+#redessociais {
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    color: #f4f4f4;
+}
+
+#redessociais ul li a {
+    color: #ffffff;
+    z-index: 1;
+    flex-direction: row;
+    display: table-cell;
+}
+
+.redes {
+    z-index: 1;
+}
+
+/*Menu*/
+
+.FixoNoTopo {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+}
+
+
+.menu {
+    width: 100%;
+    height: 51px;
+    font-family: Calibri;
+    z-index: 9;
+}
+
+.menu ul{
+    list-style: none;
+    position: relative;
+    z-index: 9;
+}
+
+.menu ul li {
+    width: 150px;
+    float: left;
+    z-index: 9;
+}
+
+.menu a{
+    padding: 16px;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    color: #f4f4f4;
+    z-index: 9;
+}
+
+.menu ul ul {
+    position: absolute;
+    visibility: hidden;
+    z-index: 9;
+}
+
+.menu ul li:hover ul{
+    visibility: visible;
+    z-index: 9;
+}
+
+
+.menu a:hover{
+    background-color: green;
+    color: #f4f4f4;
+    font-weight: bolder;
+    z-index: 9;
+    height: 19px;
+}
+
+.menu ul ul li {
+    float: none;
+    border-bottom: solid 1px #050000;
+    z-index: 9;
+}
+
+.menu ul ul li a{
+    background-color: green;
+    z-index: 9;
+}
+
+label[for="bt_menu"]{
+    padding: 5px;
+    background-color: green;
+    color: #ffffff;
+    font-family: Calibri;
+    text-align: center;
+    font-size: 30px;
+    cursor: pointer;
+    width: 50px;
+    height: 35px;
+}
+
+label[for="bt_menu"]{
+    display: none;
+}
+
+#bt_menu {
+    display: none;
+}
+
+.menu input[type=search] {
+    float: right;
+    padding: 6px;
+    border: solid 2px #050000;
+    margin-top: 7px;
+    margin-right: 2px;
+    font-size: 17px;
+    border-radius: 8px;
+    font-family: Calibri;
+    background-color: #f4f4f4;
+}
+
+.menu button[type=submit] {
+    float: right;
+    padding: 6px;
+    border: solid 2px #050000;
+    margin-top: 8px;
+    margin-right: 12px;
+    border-radius: 8px;
+    background-color: #f4f4f4;
+    cursor: pointer;
+}
+
+/*Slider*/
+
+.header2 {
+    width: 100%;
+    float: left;
+    position: relative;
+    cursor: pointer;
+    height: auto;
+}
+
+/*PARALEX
+.header2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh !important;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background-position:center top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-image: url('../img/fundoSite1.jpg');
+    background-color: #f4f4f4;*/
+
+button.slick-prev {
+    font-size: 0px;
+    border: none;
+    width: 25px;
+    height: 49px;
+    z-index: 7;
+    background-color: transparent;
+    position:absolute;
+    background-image: url('../img/anterior.png');
+    top: 43%;
+    left: 15%;
+    cursor: pointer;
+}
+
+button.slick-next {
+    font-size: 0px;
+    border: none;
+    width: 27px;
+    height: 49px;
+    z-index: 7;
+    background-color: transparent;
+    position: absolute;
+    background-image: url('../img/proximo.png');
+    top: 43%;
+    right: 15%;
+    cursor: pointer;
+}
+
+.slick-initialized {
+    overflow: hidden;
+}
+
+
+/*Corpo Site*/
+
+#fullcorpo {
+    background-image: linear-gradient(to right top, #fafbfa, #f4fbf3, #edfaed, #e7fae6, #e1f9df);
+    
+}
+
+#topo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    padding: 20px;
+    font-family: Calibri;
+    font-size: 20px;
+}
+
+#topo h1 {
+    color: green;
+    font-size: 40px;
+    font-family: Calibri;
+    margin-top: 5px;
+}
+
+#topo strong {
+    color: green;
+    font-size: 60px;
+    font-family: Calibri;
+}
+
+#topo p {
+    margin-bottom: 2em;
+    color: black;
+    font-family: Calibri;
+    font-size: 16px;
+}
+
+#serviços {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+}
+
+#serviços div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+    margin: auto;
+    cursor: pointer;
+}
+
+#serviços h3{
+    color: green;
+    font-family: Calibri;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+#serviços a {
+    text-decoration: none;
+}
+
+
+/*Novidades*/
+
+#novidades {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;    
+    font-family: Calibri; 
+    margin-top: auto; 
+}
+
+#novidades h1 {
+    color: green;
+    font-size: 40px;
+    font-family: Calibri;
+    margin-top: 20px auto;
+}
+
+#novidades1 {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    text-align: left;
+    font-family: Calibri;
+}
+
+#novidades1 div {
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    text-align: left;
+    margin-left: 10%;
+}
+
+#novidades1 h3{
+    color: green;
+}
+
+#novidades1 p{
+    color: black;
+    margin-top: 30px;
+}
+
+#novidades1 span{
+    margin-top: 15px;
+    color: black;
+    font-size: 11px;
+    
+}
+
+#novidades2 {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    text-align: left;
+    font-family: Calibri;
+}
+
+#novidades2 div {
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    text-align: left;
+    margin-left: 15%;
+}
+
+#novidades2 h3{
+    color: green;
+}
+
+#novidades2 p{
+    color: black;
+    margin-top: 20px;
+}
+
+#novidades2 span{
+    margin-top: 15px;
+    color: black;
+    font-size: 11px;
+    
+}
+
+#novidades2 a {
+    text-decoration: none;
+}
+
+#novidades1 a {
+    text-decoration: none;
+}
+
+#novidades2 div:hover {
+    font-weight: bolder;
+}
+
+#novidades1 div:hover {
+    font-weight: bolder;
+}
+
+#novidadesfull{
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    text-align: left;
+    
+    padding: 40px;
+}
+
+#novidadesfull1{
+    background-image: linear-gradient(to right bottom, #fafbfa, #f4fbf3, #edfaed, #e7fae6, #e1f9df);
+    
+}
+
+.clock-noticias:before {
+    width: 15px;
+    height: 15px;
+    content: '';
+    background-image: url('../img/clock.png');
+    float: left;
+    padding-left: 5px;
+    background-repeat: no-repeat;
+}
+
+/*Parceiros*/
+
+#parceiros {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 35px;
+}
+
+#parceiros div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: auto;
+    margin: auto;
+    cursor: pointer;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+#parceiros div:hover a {
+    margin-top: -30px;
+}
+
+/*Rodapé*/
+
+#logoeredes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.vertical {
+    display: flex;
+    flex-direction: column;
+    border-left: 1px solid green;
+    height: 60px;
+    left: 50%;
+}
+
+.vertical1 {
+    display: flex;
+    flex-direction: column;
+    border-left: 2px solid #adffac;
+    height: 500px;
+    left: 50%;
+}
+
+#rodape1 {
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    font-family: Calibri;
+    color: black;
+    background-image: linear-gradient(to left top, #fafbfa, #f4fbf3, #edfaed, #e7fae6, #e1f9df);
+    padding: 20px;
+    
+}
+
+#rodape1 div {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    text-align: left;
+    margin: auto;
+    padding: 15px;
+    
+}
+
+#rodape1 div>ul{    
+    text-decoration: none;
+}
+
+#rodape1 h4 {
+    color: green;
+    font-weight:bolder;
+    font-size: 20px;
+}
+
+#rodape {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 35px auto;
+    background-color: #dcdcdc;
+    font-family: Calibri;
+    color: black;
+}
+
+#rodape div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    background-color: #dcdcdc;
+    padding: 20px;
+    margin-top: auto;
+}
+
+#rodape div>a{    
+    text-decoration: none;
+    color: black;
+}
+
+#rodape h2 {
+    color: green;
+    font-weight:bolder;
+}
+
+
+#rodape h4 {
+    color: green;
+    font-weight:bolder;
+    font-size: 20px;
+}
+
+
+.local:before {
+    width: 15px;
+    height: 20px;
+    content: '';
+    background-image: url('../img/local.png');
+    float: left;
+    padding-left: 5px;
+    background-repeat: no-repeat;
+}
+
+.email:before {
+    width: 17px;
+    height: 13px;
+    content: '';
+    background-image: url('../img/email.png');
+    float: left;
+    padding-left: 5px;
+    background-repeat: no-repeat;
+}
+
+
+.telefone:before {
+    width: 13px;
+    height: 13px;
+    content: '';
+    background-image: url('../img/telefoneico.png');
+    float: left;
+    padding-left: 5px;
+    background-repeat: no-repeat;
+}
+
+/*Via Sudeste*/
+
+#sudeste {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: green;
+    font-family: Calibri;
+    color: #ffffff;
+    font-size: 12px;
+}
+
+
+/*INSTITUCIONAL - Sobre nós*/
+
+#fullsobre {
+    background-color: #f4f4f4;
+}
+
+#sobrenos_topo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;    
+    font-family: Calibri;   
+    margin-top: 10px auto;
+    padding: 15px;
+}
+
+#sobrenos_topo h1 {
+    color: green;
+    font-size: 50px;
+    font-family: Calibri;
+    margin-top: 20px;
+}
+
+#sobrenos_texto {
+    display: flex;
+    flex-direction: row;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;    
+    font-family: Calibri;
+    padding: 30px;
+    font-size: 18px;
+}
+
+#sobrenos_texto div>p{
+    padding: 30px;
+}
+
+#sobrenos_texto div>img{
+    padding: auto;
+    margin: 0 50px;
+}
+
+#sobrenos_texto div>h2 {
+    color: green;
+    font-size: 30px;
+    font-family: Calibri;
+}
+
+#sobrenos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #dcdcdc;
+    text-align: center;    
+    font-family: Calibri;
+}
+
+#sobrenos div {
+    margin: auto 10px;
+    padding: 50px;
+}
+
+#sobrenos div>h2 {
+    color: green;
+    font-size: 30px;
+    font-family: Calibri;
+}
+
+#ISOfull {
+    display: flex;
+    flex-direction: row-reverse;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;  
+    font-family: Calibri;
+    margin: auto;
+    padding: 50px;
+    background-color: #f4f4f4;
+}
+
+#ISO {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;    
+    font-family: Calibri;
+    margin: auto;
+}
+
+#imgiso {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;    
+    font-family: Calibri;
+    margin: auto;
+}
+
+#ISOh1 h1 {
+    color: green;
+    font-size: 50px;
+    font-family: Calibri;
+    text-align: center;
+}
+
+#ISO summary {
+    margin-top: 10px;
+    color: green;
+    font-size: 18px;
+    cursor: pointer;
+    text-align: center;
+}
+
+#ISO summary:hover{
+    font-weight: bolder;
+}
+
+#ISO hr {
+    text-align: center;
+}
+
+#ISO>p {
+    margin: 30px;
+    margin-top: auto;
+}
+
+#ISO div p {
+    margin: auto 10px;
+    
+}
+
+/*Compliance*/
+
+#fullcompliance {
+    background-color: #f4f4f4;
+}
+
+#compliance_topo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;    
+    font-family: Calibri;   
+    margin-top: 10px auto;
+    padding: 15px;
+}
+
+#compliance_topo h1 {
+    color: green;
+    font-size: 50px;
+    font-family: Calibri;
+    margin-top: 20px;
+}
+
+#compliance_texto {
+    display: flex;
+    flex-direction: row;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;    
+    font-family: Calibri;
+    padding: 30px;
+    font-size: 18px;
+}
+
+#compliance_p b{
+    color: green;
+}
+
+#compliance_texto div>p{
+    padding: 30px;
+}
+
+#compliance_texto div>img{
+    padding: auto;
+    margin: 0 50px;
+}
+
+#compliance_texto div>h2 {
+    color: green;
+    font-size: 30px;
+    font-family: Calibri;
+}
+
+#compliance_texto div>h3 {
+    color: green;
+    font-size: 22px;
+    font-family: Calibri;
+    font-weight: bolder;
+}
+
+#compliance_p {
+    font-size: 14px;
+    font-family: Calibri;
+}
+
+#compliance_texto2 {
+    display: flex;
+    flex-direction: row;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;    
+    font-family: Calibri;
+}
+
+#compliance_texto2 h2 {
+    color: green;
+    font-size: 30px;
+    font-family: Calibri;
+}
+
+#compliance_texto2 div{
+    width: 48%;
+    padding: 30px;
+}
+
+#compliance_div a{
+    color: green;
+    text-decoration: none;
+}
+
+#riscos {
+        display: flex;
+        flex-direction: row;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        text-align: center;    
+        font-family: Calibri;
+        padding: 30px;
+        background-color: #dcdcdc;
+    
+}
+
+#riscos h2{
+        color: green;
+        font-size: 30px;
+        font-family: Calibri;
+        margin-top: 20px;
+        text-align: center; 
+}
+
+#riscos summary {
+    margin-top: 10px;
+    color: green;
+    font-size: 18px;
+    cursor: pointer;
+    text-align: center;
+}
+
+#riscos summary:hover{
+    font-weight: bolder;
+}
+
+
+#riscos>p {
+    margin: 30px;
+    margin-top: auto;
+}
+
+#riscos div p {
+    margin: auto 10px;
+    
+}
+
+#integridade {
+    display: flex;
+    flex-direction: row-reverse;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;    
+    font-family: Calibri;
+    padding: 60px;
+    background-color: #f4f4f4;
+    align-items: center;
+
+}
+
+#integridade h2{
+    color: green;
+    font-size: 30px;
+    font-family: Calibri;
+    margin-top: 20px;
+    text-align: center; 
+}
+
+/*LGPD*/
+
+#fulllgpd {
+    background-color: #f4f4f4;
+}
+
+#lgpd_topo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;    
+    font-family: Calibri;   
+    margin-top: 10px auto;
+    padding: 15px;
+}
+
+#lgpd_topo h1 {
+    color: green;
+    font-size: 50px;
+    font-family: Calibri;
+    margin-top: 20px;
+}
+
+#lgpd_texto {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: left;    
+    font-family: Calibri;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+#lgpd_texto h2{
+    font-weight: bold;
+    color: green;
+    background-color: #dcdcdc;
+    font-size: 30px;
+}
+
+#lgpd_texto b{
+    color: green;
+}
+
+/*INSTITUCIONAL - Departamento*/
+
+#departamentos_topo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;    
+    font-family: Calibri;   
+    padding: 15px;
+    background-color: #f4f4f4;
+}
+
+#departamentos_topo h1 {
+    color: green;
+    font-size: 50px;
+    font-family: Calibri;
+    margin-top: 20px;
+    text-align: center;
+}
+
+#departamentos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;    
+    font-family: Calibri;
+    margin: auto;
+    background-color: #f4f4f4;
+}
+
+#departamentos #RH{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;    
+    font-family: Calibri;   
+    padding: 60px;
+    margin: 20px auto;
+}
+
+#imgRH{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;    
+    font-family: Calibri;
+    margin: auto;
+}
+
+#departamentos #Planejamento{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #dcdcdc;    
+    font-family: Calibri;
+    text-align: center;  
+    padding: 55px;
+    margin: 40px auto;
+}
+
+
+#imgPla{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #dcdcdc;
+    text-align: center;    
+    font-family: Calibri;
+    
+}
+
+#departamentos #Manutenção{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;  
+    font-family: Calibri;   
+    padding: 60px;
+    margin: auto;
+    background-color: #f4f4f4;
+}
+
+#Manutenção b{
+    color: green;
+}
+
+#imgMan{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;    
+    font-family: Calibri;
+    padding: 40px;
+    margin: auto;
+}
+
+#departamentos h2 {
+    color: green;
+    font-size: 30px;
+    font-family: Calibri;
+    text-align: center;
+}
+
+#departamentos summary {
+    margin-top: 10px;
+    color: green;
+    font-size: 18px;
+    cursor: pointer;
+    text-align: center;
+}
+
+#departamentos summary:hover {
+    font-weight: bolder;
+}
+
+#departamentos hr {
+    text-align: center;
+}
+/*ITINERÁRIOS*/
+
+#itinerarios_topo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #f4f4f4;
+    text-align: center;    
+    font-family: Calibri;   
+    padding: 15px;
+}
+
+#itinerarios_topo h1 {
+    color: green;
+    font-size: 50px;
+    font-family: Calibri;
+    margin-top: 20px;
+}
+
+#itinerarios {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: left;    
+    font-family: Calibri;
+    margin-left: 80px;
+}
+
+#itinerariofull{
+    background-color: #f4f4f4;
+}
+
+#itinerarios div {
+    background-color: #dcdcdc;
+    width: 95%;
+    background-position: center;
+}
+
+#itinerarios p {
+    color: black;
+    font-size: 22px;
+    margin: auto;
+    margin-top: 13px;
+}
+
+#itinerarios p:hover {
+    font-weight: bolder;
+    color: green;
+}
+
+
+#itinerarios a {
+    text-decoration: none;
+}
+
+/*CONTATO - Localização*/
+
+#localizacao_topo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #f4f4f4;
+    text-align: center;    
+    font-family: Calibri;   
+    padding: 15px;
+}
+
+#localizacao_topo h1 {
+    color: green;
+    font-size: 50px;
+    font-family: Calibri;
+    margin-top: 20px;
+}
+
+#localizacao {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #f4f4f4;
+    text-align: center;    
+    font-family: Calibri;
+    margin: auto;
+    margin-top: 30px auto;
+}
+
+#localizacao div {
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;    
+    font-family: Calibri;
+    margin: 30px auto;
+    margin-top: auto;
+}
+
+#localizacao p {
+    font-family: Calibri;
+    font-size: 11px;
+    color: black;
+    font-weight: bolder;
+}
+
+/*CONTATO - Fale Conosco*/
+
+#faleconosco_topo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #f4f4f4;
+    text-align: center;    
+    font-family: Calibri;   
+    padding: 15px;
+}
+
+#faleconosco_topo h1 {
+    color: green;
+    font-size: 50px;
+    font-family: Calibri;
+    margin-top: 20px;
+}
+
+#faleconosco {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #f4f4f4;
+    text-align: center;    
+    font-family: Calibri;
+}
+
+#faleconosco div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #f4f4f4;
+    font-family: Calibri;
+    margin: 30px auto;
+    margin-top: auto;
+}
+
+#faleconosco p {
+    font-weight: bolder;
+    font-family: Calibri;
+    font-size: 18px;
+}
+
+/*CONTATO - Trabalhe Conosco*/
+
+#trabalhe_topo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #f4f4f4;
+    text-align: center;    
+    font-family: Calibri;   
+    padding: 15px;
+}
+
+#trabalhe_topo h1 {
+    color: green;
+    font-size: 50px;
+    font-family: Calibri;
+    margin-top: 20px;
+}
+
+#trabalhe {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #f4f4f4;
+    text-align: left;    
+    font-family: Calibri;   
+    padding: 45px;  
+}
+
+#cargo {
+    width: 99.6%;
+}
+
+#endereço {
+    width: 99.6%;
+}
+
+#cidade {
+    width: 49.5%;
+}
+
+#estado {
+    width: 49.5%;
+}
+
+#cep {
+    width: 49.5%;
+}
+
+#indicacao {
+    width: 99.6%;
+}
+
+#funcao {
+    width: 99.6%;
+}
+
+#periodo {
+    width: 99.6%;
+}
+
+#nome {
+    width: 99.6%;
+}
+
+#cnh {
+    width: 99.6%;
+}
+
+#n-cnh {
+    width: 99.6%;
+}
+
+#naturalidade {
+    width: 99.6%;
+}
+
+#idade {
+    width: 10.3%;
+}
+
+#sexo {
+    width: 10.6%;
+}
+
+#civil {
+    width: 99.6%;
+}
+
+#escolaridade {
+    width: 99.6%;
+}
+
+#u-emprego {
+    width: 99.6%;
+}
+
+#email1 {
+    width: 99.6%;
+}
+
+#obs {
+    width: 99.6%;
+}
+
+#telefone1 {
+    width: 49.5%;
+}
+
+#celular {
+    width: 49.5%;
+}
+
+#trabalhe button {
+    width: 90px;
+    height: 40px;
+    border: solid 2px black;
+    background-color: green;
+    color: #ffffff;
+    cursor: pointer;
+    border-radius: 6px;
+    font-weight: bolder;
+    margin: auto 2px;
+}
+
+#trabalhe button:hover {
+    border: solid 2px black;
+    background-color: #f4f4f4;
+    color: green;
+    font-weight: bolder;
+}
+
+#trabalhe #bt_cv {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+}
+
+#trabalhe #sum {
+    color: black;
+    cursor: pointer;
+    margin: auto;
+    font-size: 20px;
+    font-weight: bolder;
+    padding: 5px;
+    background-color: #dcdcdc;
+}
+
+#trabalhe #sum:hover{
+    color: green;
+}
+
+/*Notícias Recentes 1*/
+
+#novfull {
+    background-color: #f4f4f4;
+}
+
+#pagnov1_topo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-size: cover;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #f4f4f4;
+    text-align: center;    
+    font-family: Calibri;   
+    padding: 15px;
+}
+
+#pagnov1_topo h1 {
+    color: green;
+    font-size: 50px;
+    font-family: Calibri;
+    margin-top: 30px auto;
+}
+
+#pagnov1_topo h2 {
+    color: green;
+    font-size: 30px;
+    font-family: Calibri;
+    margin: auto;
+}
+
+#pagnov1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 35px auto;
+    background-color: #f4f4f4;
+    font-family: Calibri;
+    color: black;
+    text-align: center;
+    margin: 10px auto;
+    padding: 20px;
+}
+
+#pagnov1 p{
+    line-height: 20px;
+}
+
+/*Notícias Recentes 2*/
+
+#pagnov2_topo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-size: cover;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #f4f4f4;
+    text-align: center;    
+    font-family: Calibri;   
+    padding: 15px;
+}
+
+#pagnov2_topo h1 {
+    color: green;
+    font-size: 50px;
+    font-family: Calibri;
+    margin-top: 30px auto;
+}
+
+#pagnov2_topo h2 {
+    color: green;
+    font-size: 30px;
+    font-family: Calibri;
+    margin: auto;
+}
+
+#pagnov2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 35px auto;
+    background-color: #f4f4f4;
+    font-family: Calibri;
+    color: black;
+    text-align: center;
+    margin: 10px auto;
+    padding: 20px;
+}
+
+#pagnov2 p{
+    line-height: 20px;
+}
+
+/*Notícias Recentes 3*/
+
+#pagnov3_topo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-size: cover;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #f4f4f4;
+    text-align: center;    
+    font-family: Calibri;   
+    padding: 15px;
+}
+
+#pagnov3_topo h1 {
+    color: green;
+    font-size: 50px;
+    font-family: Calibri;
+    margin-top: 30px auto;
+}
+
+#pagnov3_topo h2 {
+    color: green;
+    font-size: 30px;
+    font-family: Calibri;
+    margin: auto;
+}
+
+#pagnov3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 35px auto;
+    background-color: #f4f4f4;
+    font-family: Calibri;
+    color: black;
+    text-align: center;
+    margin: 10px auto;
+    padding: 20px;
+}
+
+#pagnov3 p{
+    line-height: 20px;
+}
+
+/*Notícias Recentes 4*/
+
+#pagnov4_topo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-size: cover;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #f4f4f4;
+    text-align: center;    
+    font-family: Calibri;   
+    padding: 15px;
+}
+
+#pagnov4_topo h1 {
+    color: green;
+    font-size: 50px;
+    font-family: Calibri;
+    margin-top: 30px auto;
+}
+
+#pagnov4_topo h2 {
+    color: green;
+    font-size: 30px;
+    font-family: Calibri;
+    margin: auto;
+}
+
+#pagnov4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 35px auto;
+    background-color: #f4f4f4;
+    font-family: Calibri;
+    color: black;
+    text-align: center;
+    margin: 10px auto;
+    padding: 20px;
+}
+
+#pagnov4 p{
+    line-height: 20px;
+}
+
+/*Notícias Recentes 5*/
+
+#pagnov5_topo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-size: cover;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #f4f4f4;
+    text-align: center;    
+    font-family: Calibri;   
+    padding: 15px;
+}
+
+#pagnov5_topo h1 {
+    color: green;
+    font-size: 50px;
+    font-family: Calibri;
+    margin-top: 30px auto;
+}
+
+#pagnov5_topo h2 {
+    color: green;
+    font-size: 30px;
+    font-family: Calibri;
+    margin: auto;
+}
+
+#pagnov5 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 35px auto;
+    background-color: #f4f4f4;
+    font-family: Calibri;
+    color: black;
+    text-align: center;
+    margin: 10px auto;
+    padding: 20px;
+}
+
+#pagnov5 p{
+    line-height: 20px;
+}
+
+
+/*ITINERÁRIOS - Linhas*/
+
+#linha_topo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    padding: 20px;
+    font-family: Calibri;
+    background-color: #f4f4f4;
+}
+
+#linha_topo h1{
+    color: green;
+    font-size: 40px;
+    font-family: Calibri;
+    margin-top: 20px auto;
+}
+
+#linha_topo strong {
+    color: green;
+    font-size: 50px;
+    font-family: Calibri;
+}
+
+#linha {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    font-family: Calibri;
+    margin: auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+#linha div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: left;
+    font-family: Calibri;
+    margin: auto;
+    background-color: #f4f4f4;
+}
+
+#linha h3 {
+    color: green;
+    font-size: 30px;
+    text-align: center;
+}
+
+/*CONFINDENCIAL*/
+
+#fullconfidencial {
+    background-color: #f4f4f4;
+}
+
+#confidencial {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+    background-position: left;
+    text-align: left;
+    font-family: Calibri;
+    padding: 20px;
+    background-color: #f4f4f4;
+    margin-left: 5.5%;
+    margin-right: 5.5%;
+}
+
+#confidencial h2{
+    font-size: 50px;
+    color: green;
+    text-align: center;
+}
+
+#confidencial p{
+    font-size: 18px;
+}
+
+#fullpag_inicial{
+    background-color: #dcdcdc;
+}
+
+#pag_inicial_confi {
+    font-size: 25px;
+    font-family: Calibri;
+    color: green;
+    display: flex;
+    align-items: left;
+    text-align: left;
+    margin-left: 5.5%;
+    background: #dcdcdc;
+    padding: 20px;
+    text-decoration: none;
+}
+
+#texto_pag_inicial_confi{
+    font-size: 18px;
+    color: black;
+    font-family: Calibri;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    text-align: left;
+    margin-left: 7%;
+    margin-right: 7%;
+    text-decoration: none;
+}
+
+
+
+#texto_pag_inicial_confi button {
+    width: 130px;
+    height: 45px;
+    border: solid 2px black;
+    background-color: green;
+    color: #ffffff;
+    cursor: pointer;
+    border-radius: 6px;
+    font-weight: bolder;
+    margin: auto 2px;
+    font-family: Calibri;
+    
+}
+
+#texto_pag_inicial_confi button:hover {
+    border: solid 2px black;
+    background-color: #f4f4f4;
+    color: green;
+    font-weight: bolder;
+}
+
+#texto_realizar{
+    font-size: 18px;
+    color: black;
+    font-family: Calibri;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    text-align: left;
+    margin-left: 7%;
+    margin-right: 7%;
+    text-decoration: none;
+}
+
+
+
+#texto_realizar button {
+    width: 220px;
+    height: 45px;
+    border: solid 2px black;
+    background-color: green;
+    color: #ffffff;
+    cursor: pointer;
+    border-radius: 6px;
+    font-weight: bolder;
+    margin: auto 2px;
+    font-family: Calibri; 
+}
+
+#texto_realizar button:hover {
+    border: solid 2px black;
+    background-color: #f4f4f4;
+    color: green;
+    font-weight: bolder;
+}
+
+#texto_realizar2{
+    font-size: 18px;
+    color: black;
+    font-family: Calibri;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    text-align: left;
+    margin-left: 7%;
+    margin-right: 7%;
+    text-decoration: none;
+}
+
+
+
+#texto_realizar2 button {
+    width: 80px;
+    height: 45px;
+    border: solid 2px black;
+    background-color: green;
+    color: #ffffff;
+    cursor: pointer;
+    border-radius: 6px;
+    font-weight: bolder;
+    margin: auto 2px;
+    font-family: Calibri; 
+}
+
+#texto_realizar2 button:hover {
+    border: solid 2px black;
+    background-color: #f4f4f4;
+    color: green;
+    font-weight: bolder;
+}
+
+#texto_identificar{
+    font-size: 18px;
+    color: black;
+    font-family: Calibri;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    text-align: left;
+    margin-left: 7%;
+    margin-right: 7%;
+    text-decoration: none;
+    
+}
+
+#texto_identificar b{
+    color: green;
+}
+
+#texto_identificar button {
+    width: 120px;
+    height: 45px;
+    border: solid 2px black;
+    background-color: green;
+    color: #ffffff;
+    cursor: pointer;
+    border-radius: 6px;
+    font-weight: bolder;
+    margin: auto 2px;
+    font-family: Calibri;
+
+}
+
+#texto_identificar button:hover {
+    border: solid 2px black;
+    background-color: #f4f4f4;
+    color: green;
+    font-weight: bolder;
+}
+
+#conf-nome {
+    width: 99.6%;
+}
+
+#conf-funcao {
+    width: 99.6%;
+}
+
+#conf-email {
+    width: 49.5%;
+}
+
+#conf-tel {
+    width: 49.5%;
+}
+
+
+#conf-cel {
+    width: 49.5%;
+}
+
+#relato {
+    width: 49.5%
+}
+
+#local-relato {
+    width: 49.5%;
+}
+
+#DescricaoRelato {
+    width: 99.6%;
+}
+
+@media only screen and (max-width: 980px) {
+
+    /*menu*/
+    label[for="bt_menu"]{
+        display: block;
+    }
+
+    .menu{
+        margin-left: -200%;
+        transition: all .4s;
+        font-family: Calibri;
+    }
+
+    #bt_menu:checked ~ .menu {
+        margin-left: 0;
+        background-color: green;
+    }
+
+    .menu ul li{
+        width: 100%;
+        float: none;
+        background-color: green;
+    }
+
+    .menu ul ul {
+        position: static;
+        overflow: hidden;
+        max-height: 0;
+        transition: all .4s;
+        background-color: green;
+    }
+
+    .menu ul li:hover ul{
+        height: auto;
+        max-height: 200px;
+        background-color: green;
+    }
+
+    #header1{
+        height: 800px;
+        height: 120vh;
+        justify-content: center;
+        flex-direction: column;
+        height: auto;
+    }
+
+    /*Slider*/
+    .header2 {
+        max-width: 100%;
+        width: auto;
+        height: auto;
+    }
+
+    
+
+    /*Corpo Site*/
+
+    #topo {
+        height: 600px;
+        height: 65vh;
+        justify-content: center;
+        flex-direction: column;
+        height: auto;
+        font-family: Calibri;
+    }
+
+    /*Notícias*/
+
+    #novidades1 {
+        height: 600px;
+        height: 65vh;
+        justify-content: center;
+        flex-direction: column;
+        height: auto;
+        align-items: auto;
+        font-family: Calibri;
+    }
+
+    #novidades2 {
+        height: 600px;
+        height: 65vh;
+        justify-content: center;
+        flex-direction: column;
+        height: auto;
+        align-items: auto;
+        font-family: Calibri;
+    }
+
+    #novidadesfull {
+        height: 600px;
+        height: 65vh;
+        justify-content: center;
+        flex-direction: column;
+        height: auto;
+        align-items: auto;
+        font-family: Calibri;
+        overflow:hidden
+    }
+
+    .vertical1{
+        margin-left: -100%;
+        height: auto;
+    }
+    /*Parceiros*/
+
+    #parceiros {
+            height: 800px;
+            height: 130vh;
+            justify-content: center;
+            flex-direction: column;
+            height: auto;
+            align-items: auto;
+            font-family: Calibri;
+        }
+
+    /*Rodape*/
+
+    #rodape1 {
+        height: 800px;
+        height: 145vh;
+        justify-content: center;
+        flex-direction: row;
+        height: auto;
+        font-family: Calibri;
+    }
+
+    #rodape {
+        height: 800px;
+        height: 145vh;
+        justify-content: center;
+        flex-direction: column;
+        background-color: #dcdcdc;
+        height: auto;
+        font-family: Calibri;
+    }
+
+/*INSTITUCIONAL - Sobre nós*/
+
+    #sobrenos_topo {
+        height: auto;
+        height: 45vh;
+        justify-content: center;
+        flex-direction: column;
+        height: auto;
+        font-family: Calibri;
+    }
+    
+    #sobrenos_texto {
+        height: auto;
+        height: 45vh;
+        justify-content: center;
+        flex-direction: column;
+        height: auto;
+        font-family: Calibri;
+    }
+    
+    #sobrenos_texto img {
+        max-width: 100%;
+        width: 330px;
+    }
+
+    #sobrenos {
+        height: 800px;
+        height: 230vh;
+        justify-content: center;
+        flex-direction: column;
+        background-color: #dcdcdc;
+        height: auto;
+        font-family: Calibri;
+    }
+
+    #fullsobre{
+        background-color: #f4f4f4;
+        font-family: Calibri;
+    }
+
+    #ISOfull {
+        background-color: #f4f4f4;
+        font-family: Calibri;
+    }
+    
+
+
+/*INSTITUCIONAL - Departamentos*/
+
+#RH {
+    height: 800px;
+    height: 230vh;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #f4f4f4;
+    height: auto;
+    font-family: Calibri;
+}
+
+#imgRH img{
+    max-width: 100%;
+    width: 300px;
+}
+
+#Planejamento {
+    height: 800px;
+    height: 230vh;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #dcdcdc;
+    height: auto;
+    margin: auto;
+    font-family: Calibri;
+    
+}   
+
+
+#imgPla {
+    flex-direction: column;
+}
+
+#imgPla img {
+    max-width: 100%;
+    width: 300px;
+    flex-direction: column;
+}
+
+#Manutenção {
+    height: 800px;
+    height: 230vh;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #ffffff;
+    height: auto;
+    font-family: Calibri;
+}
+
+#imgMan {
+    flex-direction: column;
+}
+
+#imgMan img{
+    max-width: 100%;
+    width: 200px;
+}
+
+
+
+
+
+/*ITINERARIOS*/
+
+#itinerarios {
+    justify-content: center;
+    margin-left: 10px;
+    font-family: Calibri;
+}
+
+/*ITINERARIOS - Linhas*/
+
+#linha {
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 10px;
+    font-family: Calibri;
+}
+
+#linha h3{
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 10px;
+    text-align: center;
+    font-family: Calibri;
+}
+
+/*CONTATO - Localização*/
+
+#localizacao {
+    height: 600px;
+    height: 130vh;
+    justify-content: center;
+    flex-direction: column;
+    height: auto;
+    font-family: Calibri;
+}
+
+/*CONTATO - Fale Conosco*/
+
+#faleconosco {
+    height: 600px;
+    height: 65vh;
+    justify-content: center;
+    flex-direction: column;
+    height: auto;
+    font-family: Calibri;
+}
+/*Compliance*/
+
+#compliance_texto img {
+    max-width: 100%;
+    width: 80px;
+}
+
+#compliance_p {
+    font-size: 13px;
+}
+
+#fullcompliance {
+    height: 600px;
+    height: 130vh;
+    justify-content: center;
+    flex-direction: column;
+    height: auto;
+    font-family: Calibri;
+}
+
+#compliance_texto2 img {
+    max-width: 100%;
+    width: 80px;
+}
+
+#riscos img {
+    max-width: 100%;
+    width: 200px;
+}
+
+#riscos {
+    flex-direction: column;
+}
+
+#integridade img {
+    max-width: 100%;
+    width: 400px;
+}
+
+#integridade {
+    flex-direction: column;
+}
+
+}
