@@ -1999,6 +1999,7 @@ button.slick-next {
         margin-left: -200%;
         transition: all .4s;
         font-family: Calibri;
+        width: 100%;
     }
 
     #bt_menu:checked ~ .menu {
