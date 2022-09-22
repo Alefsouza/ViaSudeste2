@@ -450,8 +450,8 @@ button.slick-next {
 #novidadesfull{
     display: flex;
     flex-direction: row;
-    align-items: left;
-    text-align: left;
+    align-items: center;
+    text-align: center;
     
     padding: 40px;
 }
