@@ -117,6 +117,7 @@ hr {
     height: 51px;
     font-family: Calibri;
     z-index: 9;
+    margin-left: 150px;
 }
 
 .menu ul{
@@ -143,7 +144,7 @@ hr {
 .menu ul ul {
     position: absolute;
     visibility: hidden;
-    z-index: 9;
+    z-index: 9; 
 }
 
 .menu ul li:hover ul{
