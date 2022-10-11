@@ -281,7 +281,7 @@ button.slick-next {
 /*Corpo Site*/
 
 #fullcorpo {
-    background-image: linear-gradient(to right top, #fafbfa, #f4fbf3, #edfaed, #e7fae6, #e1f9df);
+    background-image: linear-gradient(to right top, #fafbfa, #f4fbf3, #edfaed, #e7fae6, #e1f9df)
     
 }
 
@@ -491,7 +491,7 @@ button.slick-next {
     margin-top: auto;
     margin: auto;
     cursor: pointer;
-    background-color: #f4f4f4;
+    background-color: #dcdcdc;
     padding: 20px;
 }
 
