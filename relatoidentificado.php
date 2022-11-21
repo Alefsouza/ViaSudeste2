@@ -10,15 +10,15 @@
     use PHPMailer\PHPMailer\SMTP;
     use PHPMailer\PHPMailer\Exception;
 
-    $Nome = isset($_POST['conf-nome']) ? $_POST['conf-nome'] : 'Não Informado';
+    $Nome = isset($_POST['conf-nome']) ? $_POST['conf-nome'] : 'Sem identificação';
     $Funcao = isset($_POST['conf-funcao']) ? $_POST['conf-funcao'] : 'Não Informado';
     $Email = isset($_POST['conf-email']) ? $_POST['conf-email'] : 'Não Informado';
     $Telefone = isset($_POST['conf-tel']) ? $_POST['conf-tel'] : 'Não Informado';
     $Celular = isset($_POST['conf-cel']) ? $_POST['conf-cel'] : 'Não Informado';
-    $Relato = isset($_POST['TipodoRelato']) ? $_POST['TipodoRelato'] : 'Não Informado';
-    $Local = isset($_POST['LocaldoRelato']) ? $_POST['LocaldoRelato'] : 'Não Informado';
-    $Descricao = isset($_POST['DescricaoRelato']) ? $_POST['DescricaoRelato'] : 'Não Informado';
-    $Anexo = $_FILES['AnexarArquivo'];
+    $Relato = isset($_POST['Tipo_do_Relato']) ? $_POST['Tipo_do_Relato'] : 'Não Informado';
+    $Local = isset($_POST['Local_do_Relato']) ? $_POST['Local_do_Relato'] : 'Não Informado';
+    $Descricao = isset($_POST['Descricao_Relato']) ? $_POST['Descricao_Relato'] : 'Não Informado';
+    $Anexo = $_FILES['Anexar_Arquivo'];
 
     $data= date('d/m/Y H:i:s');
 
@@ -28,15 +28,15 @@ if($Nome && $Funcao && $Relato && $Local && $Descricao){
     
         $mail->CharSet = 'UTF-8';
         $mail->isSMTP();
-        $mail->Host = 'smtp.gmail.com';
+        $mail->Host = 'smtp-mail.outlook.com';
         $mail->SMTPAuth = true;
-        $mail->Username = 'aleefsoouza024@gmail.com';
-        $mail->Password = 'Alef1234@,.';
-        $mail->SMTPSecure = 'tls'; 
+        $mail->Username = 'aleef_soouza@hotmail.com';
+        $mail->Password = '20838078Ah';
+        $mail->SMTPSecure = 'tsl'; 
         $mail->Port = 587;
-        $mail->SMTPDebug  = 1;
+        $mail->SMTPDebug  = 0;
 
-        $mail->setFrom('aleefsoouza024@gmail.com');
+        $mail->setFrom('aleef_soouza@hotmail.com');
         $mail->addAddress('alef.silva@viasudeste.com');
 
         $mail->addAttachment($Anexo['tmp_name'], $Anexo['name']);
@@ -73,7 +73,7 @@ if($Nome && $Funcao && $Relato && $Local && $Descricao){
         Para qualquer problema ou dúvida, por favor mandar e-mail para: ti@viasudeste.com";
 
         if ($mail->send()) {
-            echo "<strong>Relato enviado com sucesso!</strong>";
+            echo "<strong>Relato enviado com sucesso!<br/><br/>Obrigado por colaborar conosco!</strong>";
         } else {
                 echo "<strong>Relato não foi enviado! Por favor tente novamente mais tarde!</strong>";
         } 
