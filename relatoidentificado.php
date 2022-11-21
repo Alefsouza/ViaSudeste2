@@ -37,7 +37,7 @@ if($Nome && $Funcao && $Relato && $Local && $Descricao){
         $mail->SMTPDebug  = 0;
 
         $mail->setFrom('aleef_soouza@hotmail.com');
-        $mail->addAddress('alef.silva@viasudeste.com');
+        $mail->addAddress('denuncia@viasudeste.com');
 
         $mail->addAttachment($Anexo['tmp_name'], $Anexo['name']);
 
