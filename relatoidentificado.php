@@ -80,3 +80,4 @@ if($Nome && $Funcao && $Relato && $Local && $Descricao){
     }else {
         echo "<strong>Relato não enviado, por favor preencher campos necessários!</strong>";
     }
+?>
